@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <div class="bg-intro">
+        <nav id="nav-bar">
+            <div id="nav-name">
+                <h2>Moad Makboul</h2>
+            </div>
+            <div id="nav-links">
+                <ul>
+                    <li class="aboutme"><a href="#aboutme">About</a></li>
+                    <li class="projects"><a href="#projects">Projects</a></li>
+                    <li class="certificates"><a href="#certificates">Certificates</a></li>
+                    <li class="contact"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="intro">
+            <div id="introduction">
+                <p>Hello, I'm Moad<span id="intro-post">FullStack Developer <span id="symbol"> &lt;/&gt; </span> </span></p>
+            </div>
+        </div>
+    </div>
+    <section id="aboutme">
+        <h3>Get To Know More</h3>
+        <h2>About Me</h2>
+        <div id="aboutme-upper">
+            <div id="profile-picture">
+                <img src="./assets/profilev3.png" alt="">
+            </div>
+            <p id="description">Developer with a <strong>passion</strong> for developing scalable web applications and working across the <strong>full stack</strong>. <br> I would jump at any opportunity to continue growing my skills and contribute to the software development life cycle.</p>
+        </div>
+        <div id="resume">
+            <div id="technologies">
+                <h2>Technologies I've had experience with</h2>
+                <ul>
+                    <li>
+                        <img width="70" height="70" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/> <br>
+                        JavaScript</li>
+                    <li>
+                        <img width="70" height="70" src="https://img.icons8.com/color/48/react-native.png" alt="react-native"/><br>
+                        React.js</li>
+                    <li>
+                        <img width="70" height="70" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1"/><br>
+                        Python</li>
+                    <li>
+                        <img width="70" height="70" src="https://img.icons8.com/material-rounded/48/django.png" alt="django"/><br>
+                        Django</li>
+                    <li>
+                        <img width="70" height="70" src="https://img.icons8.com/color/48/flask.png" alt="flask"/><br>
+                        Flask</li>
+                    <li>
+                        <img width="70" height="70" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/><br>
+                        HTML</li>
+                    <li>
+                        <img width="70" height="70" src="https://img.icons8.com/color/48/css3.png" alt="css3"/><br>
+                        CSS</li>
+                    <li>
+                        <img width="70" height="70" src="https://img.icons8.com/material-two-tone/48/data-configuration--v2.png" alt="data-configuration--v2"/><br>
+                        SQL</li>
+                    <li>
+                        <img width="70" height="70" src="https://img.icons8.com/color/48/git.png" alt="git"/><br>
+                        VCS Git</li>
+                    <li>
+                        <img width="70" height="70" src="https://img.icons8.com/badges/48/infinity.png" alt="infinity"/><br>
+                        CI/CD</li>
+                    <li>
+                        <img width="70" height="70" src="https://img.icons8.com/fluency/48/docker.png" alt="docker"/><br>
+                        Docker</li>
+                    <li>
+                        <img width="70" height="70" src="https://img.icons8.com/color/48/kubernetes.png" alt="kubernetes"/><br>
+                        Kubernetes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div id="projects-title-section">
+            <h3>Browse My Recent</h3>
+            <h2>Projects</h2>
+        </div>
+        <div id="projects-box">
+            <div id="flask-project" class="projects-div">
+                <img src="./assets/flask_blog.png" alt="">
+                <button type="button" id="flask" class="readmore" data-toggle="modal" data-target="#flaskModal">Read more</button>
+                <div class="description-project">
+                    <p>Blog Web application to post and share ideas as well as contributing on others' posts</p>
+                    <div class="description-icons">
+                        <div>
+                            <img width="50" height="50" src="https://img.icons8.com/color/48/flask.png" alt="flask"/>
+                        </div>
+                        <div>
+                            <img width="50" height="50" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1"/>
+                        </div>
+                        <div>
+                            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/sql.png" alt="sql"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flask Modal  -->
+            <div class="modal fade" id="flaskModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header py-4 bg-light">
+                            <h5 class="modal-title m-auto">Blog Web Application</h5>
+                            <button type="button" class="close border-0 bg-light" data-dismiss="modal" aria-label="Close">
+                              <span class="times" aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-image w-75 mx-auto">
+                                <img src="./assets/flask_blog.png" alt="">
+                            </div>
+                            <div class="modal-text w-75 mx-auto my-5">
+                                <p class="about-project">
+                                    This application was created in the purpose of practising Flask python framework and SQL. 
+                                    It is a Blog in which users can have their own profile to login and logout from, writing some posts where they can share ideas and opinions about different subjects. 
+                                    The posts can be edited and deleted by the poster. 
+                                    A vote functionalitie is available as well and it is created with the help of AJAX and jQuery. 
+                                </p>
+                                <p><strong class="text-black">Technologies:</strong> Flask, Python, Postgres SQL, JavaScript, Bootstrap</p>
+                            </div>
+                            <div>
+                                <p class="w-50 mx-auto text-center">
+                                    <button class="btn-visit"><a href="https://blog-vgfl.onrender.com" rel="noopener" target="_blank">VISIT SITE</a></button> or 
+                                    <button class="btn-visit"><a href="https://github.com/moadmakboul/blog/tree/main" rel="noopener" target="_blank">VIEW SOURCE</a></button>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer bg-light">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="e-commerce" class="projects-div">
+                <img src="./assets/market.png" alt="">
+                <button id="commerce" class="readmore" type="button" data-toggle="modal" data-target="#marketModal">Read more</button>
+                <div class="description-project">
+                    <p>An online market to buy different items and creating personal profile</p>
+                    <div class="description-icons">
+                        <div>
+                            <img width="50" height="50" src="https://img.icons8.com/color/48/react-native.png" alt="react-native"/>
+                        </div>
+                        <div>
+                            <img width="50" height="50" src="https://img.icons8.com/material-rounded/48/django.png" alt="django"/>
+                        </div>
+                        <div>
+                            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/sql.png" alt="sql"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- E-commerce Modal  -->
+            <div class="modal fade" id="marketModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header py-4 bg-light">
+                            <h5 class="modal-title m-auto">E-Market Web Application</h5>
+                            <button type="button" class="close border-0 bg-light" data-dismiss="modal" aria-label="Close">
+                              <span class="times" aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-image w-75 mx-auto">
+                                <img src="./assets/market 2.JPG" alt="">
+                            </div>
+                            <div class="modal-text w-75 mx-auto my-5">
+                                <p class="about-project">
+                                    This application was created in the purpose of practising Django python framework, React and postgres SQL. 
+                                    Each cutomer have access to discover listed products and get a full description of each item.
+                                    In order to make a successful purchase, the customer needs to create a personal profile, then login.
+                                    After adding the needed products in cart, A payment can be proceeded by a bank card.
+                                    In the profile section, user can always check the history of purchases.  
+                                </p>
+                                <p><strong class="text-black">Technologies:</strong> Django, Python, Postgres SQL, React.js, Bootstrap, Strip</p>
+                            </div>
+                            <div>
+                                <p class="w-50 mx-auto text-center">
+                                    <button class="btn-visit"><a href="#" rel="noopener" target="_blank">VISIT SITE</a></button> or 
+                                    <button class="btn-visit"><a href="https://github.com/moadmakboul/E-market" rel="noopener" target="_blank">VIEW SOURCE</a></button>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer bg-light">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="certificates">
+        <div id="certificates-title-section">
+            <h3>Browse My Completed</h3>
+            <h2>Courses</h2>
+        </div>
+        <div id="certificates-box">
+            <div class="certificates-div" onclick="window.open('./certificates_pdf/IBM DevOps and Software Engineering.pdf')">
+                <img src="./assets/certificates/IBM DevOps and Software Engineering_page-0001.jpg" alt="">
+                <div class="certificate-list">
+                    <ul>
+                        <li>Cloud Computing</li>
+                        <li>Devops</li>
+                        <li>Agile Software Development</li>
+                        <li>CI/CD</li>
+                        <li>Application development</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="certificates-div" onclick="window.open('./certificates_pdf/DevOps Cloud Agile.pdf')">
+                <img src="./assets/certificates/DevOps Cloud Agile_page-0001.jpg" alt="">
+                <div class="certificate-list">
+                    <ul>
+                        <li>DevOps</li>
+                        <li>Cloud Computing</li>
+                        <li>Agile Development</li>
+                        <li>Scrum</li>
+                    </ul>
+                </div>
+            </div> 
+
+
+            <div class="certificates-div" onclick="window.open('./certificates_pdf/Advanced React.pdf')">
+                <img src="./assets/certificates/Advanced React_page-0001.jpg" alt="">
+                <div class="certificate-list">
+                    <ul>
+                        <li>Hooks</li>
+                        <li>fetch and Post data</li>
+                        <li>Front-End Web Development</li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="certificates-div" onclick="window.open('./certificates_pdf/Javascript.pdf')">
+                <img src="./assets/certificates/Javascript_page-0001.jpg" alt="">
+                <div class="certificate-list">
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>Objects and Arrays</li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="certificates-div" onclick="window.open('./certificates_pdf/P4E.pdf')">
+                <img src="./assets/certificates/P4E_page-0001.jpg" alt="">
+                <div class="certificate-list">
+                    <ul>
+                        <li>Python Programming</li>
+                        <li>Database (DBMS)</li>
+                        <li>Python Data Structures</li>
+                        <li>Json</li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="certificates-div" onclick="window.open('./certificates_pdf/HTML CSS.pdf')">
+                <img src="./assets/certificates/HTML CSS_page-0001.jpg" alt="">
+                <div class="certificate-list">
+                    <ul>
+                        <li>UI using Bootstrap</li>
+                        <li>responsive layout</li>
+                        <li>Animations</li>
+                        <li>HTML Forms</li>
+                    </ul>
+                </div>
+            </div>             
+        </div>
+    </section>
+    <section id="contact">
+        <div>
+            <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/telegram-app.png" alt="telegram-app"/>
+            <h2>Get In Touch!</h2>
+            <div id="contact-btns">
+                <p id="emailme">
+                    <a href="mailto:moad.makboul.mm@gmail.com">Email me!</a>
+                </p>
+                <p id="resume-btn" onclick="window.open('./resume/Moad_Makboul_Resume_Web_dev.pdf')">Resume</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p id="rocket"><img width="64" height="64" src="./assets/rocket12.png" alt="stellar"/></p>
+        <p id="rocket-message">Beam me Up! <img width="30" height="30" src="./assets/teleport_arrow-removebg-preview.png" alt=""></p>
+        <div id="social-icons">
+            <img width="48" height="48"  src="./assets/github-mark-white.png" alt="" onclick="window.open('https://github.com/moadmakboul')"/>
+            <img width="60" height="60" src="https://img.icons8.com/fluency/96/linkedin-circled.png" alt="linkedin-circled" onclick="window.open('https://www.linkedin.com/in/moad-makboul-ab318128a/')" />
+        </div>
+        <p>Copyright ©2023 Moad. All Rights Reserved</p>
+    </footer>
+        <script src="main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>
